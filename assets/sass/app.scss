@@ -67,10 +67,10 @@
                 margin: 0 20px 0px 0px;
                 a, .menu-bars {
                     text-decoration: none;
-                    color: #efefef;
+                    color: #dedede;
                     font-weight: 200;
                     letter-spacing: 1px;
-                    padding: 15px 0px 15px 0px;
+                    padding: 15px 0px 15px 15px;
                     span {
                         background-color: #352f39;
                         height: 40px;
@@ -88,7 +88,7 @@
                 &:hover a {
                     color: #fff;
                     span {
-                        
+                        background-color: #3c3640;
                     }
                 }
                 &.active a {
@@ -105,7 +105,7 @@
 
 #dash_body {
     margin-top: 60px;
-    width: calc(100% - 75px);
+    width: calc(100% - 77px);
     height: 100vh;
     margin-right: 0; margin-left: auto;
     overflow: hidden;
@@ -128,13 +128,19 @@
 
 #upload_page, #browse_page, #about_page, #welcome_page {
     .wrapper {
-        
+        padding: 16px;
+        background-color: #f7f7f7;
+        .page_banner {
+            padding: 40px 60px;
+            margin-bottom: 16px;
+            .top-text {
+                width: 60%;   
+            }
+        }
     }
 }
 #welcome_page {
     .wrapper {
-        padding: 16px;
-        background-color: #f7f7f7;
         .news {
             background-color: #000;
             margin: 3px;
@@ -184,16 +190,93 @@
 }
 #browse_page {
     .wrapper {
-        background-color: $red;
+        .page_banner {
+            background-color: #fff;
+        }
+        .page_body {
+            .nyhet {
+                padding: 20px;
+                background-color: #fff;
+                position: relative;
+                margin-bottom: 16px;
+                &.yellow {
+                    background-color: $yellow;
+                }
+                &.red {
+                    background-color: $red;
+                }
+                &.purple {
+                    background-color: $purple;
+                }
+                &.green {
+                    background-color: $green;
+                }
+                &.blue {
+                    background-color: $blue;
+                }
+                .nyhet_text {
+                    margin-left: 85px;
+                    color: #fff;
+                    margin-right: 85px;
+                    h1 {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    .name {
+                        margin-top: 2px;
+                    }
+                    .desc {
+                        margin-top: 10px;
+                        font-size: 13px;
+                        margin-bottom: 5px;   
+                    }
+                    .morelink {
+                        display: none;   
+                    }
+                    p {
+                        letter-spacing: 1px;
+                        margin-bottom: 0;
+                    }
+                    .morecontent span {
+                        display: none;
+                    }
+                    .comment {
+                        width: 400px;
+                        background-color: #f0f0f0;
+                        margin: 10px;
+                    }
+                }
+                
+                .date {
+                    position: absolute;
+                    right: 30px;
+                    display: block;
+                    top: 55px;
+                    color: #fff;
+                }
+                .fa-plus {
+                    font-size: 60px;
+                    display: block;
+                    position: absolute;
+                    color: #fff;
+                    left: 30px;
+                    top: 40px;
+                }
+            }
+        }
     }
 }
 #upload_page {
     .wrapper {
-        background-color: $yellow;
+        .page_banner {
+            background-color: $blue;
+        }
     }
 }
 #about_page {
     .wrapper {
-        background-color: $blue;
+        .page_banner {
+            background-color: $green;
+        }
     }
 }
