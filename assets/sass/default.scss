@@ -3,7 +3,23 @@ $blue: #62ADCC;
 $purple: #7B5681;
 $yellow: #FCD166;
 $red: #F26D66;
-
+* {
+    &.yellow {
+        background-color: $yellow;
+    }
+    &.red {
+        background-color: $red;
+    }
+    &.purple {
+        background-color: $purple;
+    }
+    &.green {
+        background-color: $green;
+    }
+    &.blue {
+        background-color: $blue;
+    }
+}
 .nosel {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
