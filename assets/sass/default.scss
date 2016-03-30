@@ -166,7 +166,7 @@ strong {
     user-select: none; 
     
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
     letter-spacing: .3px;
     background: transparent;
@@ -177,6 +177,7 @@ strong {
     width: 150px;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
+    margin-right: 10px;
     &.large {
         width: 160px;
         padding: 10px 42px;

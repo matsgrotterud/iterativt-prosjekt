@@ -14,7 +14,7 @@ $(document).ready(function () {
         $("div.page").removeClass("open");
         $target.addClass("open");
         $('html, body').animate({
-            scrollTop: $(".meny-wrap").offset().top - 52
+            scrollTop: $("#navigation").offset().top - 52
         }, 0);
     });
 });
