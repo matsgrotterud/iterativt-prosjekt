@@ -67,10 +67,10 @@
                 margin: 0 20px 0px 0px;
                 a, .menu-bars {
                     text-decoration: none;
-                    color: #efefef;
+                    color: #dedede;
                     font-weight: 200;
                     letter-spacing: 1px;
-                    padding: 15px 0px 15px 0px;
+                    padding: 15px 0px 15px 15px;
                     span {
                         background-color: #352f39;
                         height: 40px;
@@ -88,7 +88,7 @@
                 &:hover a {
                     color: #fff;
                     span {
-                        
+                        background-color: #3c3640;
                     }
                 }
                 &.active a {
@@ -105,7 +105,7 @@
 
 #dash_body {
     margin-top: 60px;
-    width: calc(100% - 75px);
+    width: calc(100% - 77px);
     height: 100vh;
     margin-right: 0; margin-left: auto;
     overflow: hidden;
@@ -128,13 +128,12 @@
 
 #upload_page, #browse_page, #about_page, #welcome_page {
     .wrapper {
-        
+        padding: 16px;
+        background-color: #f7f7f7;
     }
 }
 #welcome_page {
     .wrapper {
-        padding: 16px;
-        background-color: #f7f7f7;
         .news {
             background-color: #000;
             margin: 3px;
