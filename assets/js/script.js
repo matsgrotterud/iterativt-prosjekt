@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#navigation ul li a[href^="#"]').on('click', function (e) {
+    $('#navigation ul li a[href^="#"]').click(function (e) {
         e.preventDefault();
         $(document).off("scroll");
         
@@ -13,6 +13,11 @@ $(document).ready(function () {
         $target = $(target);
         $("div.page").removeClass("open");
         $target.addClass("open");
+    });
+    $('#navigation ul .bars').click(function () {
+        $(this).parent().toggleClass("push");
+        $(this).find(".fa-bars").toggleClass("hidden");
+        $(this).find(".fa-times").toggleClass("hidden");
     });
 });
 
