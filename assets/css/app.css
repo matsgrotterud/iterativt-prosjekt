@@ -295,6 +295,9 @@ strong {
     margin-bottom: 16px; }
     #upload_page .wrapper .page_banner .top-text, #browse_page .wrapper .page_banner .top-text, #about_page .wrapper .page_banner .top-text, #welcome_page .wrapper .page_banner .top-text {
       width: 60%; }
+      @media (max-width: 768px) {
+        #upload_page .wrapper .page_banner .top-text, #browse_page .wrapper .page_banner .top-text, #about_page .wrapper .page_banner .top-text, #welcome_page .wrapper .page_banner .top-text {
+          width: 100%; } }
 
 #welcome_page .wrapper .news {
   background-color: #000;

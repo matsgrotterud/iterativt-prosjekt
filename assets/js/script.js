@@ -37,8 +37,8 @@ $(document).ready(function() {
     });
  
     $(".nyhet").click(function(e){
-
         $(this).find(".morecontent").toggleClass("hidden");
+        $(this).find(".moreellipses").toggleClass("hidden");
         $(this).find(".fa-plus").toggleClass("hidden");
         $(this).find(".fa-minus").toggleClass("hidden");
     });

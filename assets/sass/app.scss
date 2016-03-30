@@ -134,7 +134,10 @@
             padding: 40px 60px;
             margin-bottom: 16px;
             .top-text {
-                width: 60%;   
+                width: 60%; 
+                @media (max-width: 768px) {
+                    width: 100%;   
+                }
             }
         }
     }
