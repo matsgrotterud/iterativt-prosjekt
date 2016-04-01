@@ -39,6 +39,28 @@
             </div>
             <div class="page_body">
                 
+                <div class="message" style="display: none">
+                    <h1>Posten din er postet!</h1>
+                </div>
+                <form action="post_nyhet.php" method="POST">
+                        <h1 class="black text-center">Skriv posten din her</h1>
+                         <div class="border center"></div>
+                        <input placeholder="Ditt Navn" type="text" name="navn" class="name" id="navn">
+
+                        <input placeholder="Tittel" type="text" name="tittel" class="title" id="tittel">
+                        
+                        <select type="text" name="nyhetType" id="type">
+                            <option value="" disabled selected>Velg type</option>
+                            <option value="yellow">Nyhet</option>
+                            <option value="purple">Arrangement</option>
+                            <option value="green">Gladmelding</option>
+                            <option value="red">Viktig melding</option>
+                            <option value="blue">Humor</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <textarea placeholder="Innhold" type="text" name="beskrivelse" style="resize: none;" id="beskrivelse"></textarea>
+                    <input type="submit" value="POST" class="btn submit" id="submit">	
+                </form>
             </div>
         </div>
     </section>
@@ -46,6 +68,6 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
-
+    <script src="../assets/js/validate.js"></script>
   </body>
 </html>

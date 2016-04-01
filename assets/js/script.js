@@ -11,7 +11,24 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
-        $("div.page").removeClass("open");
+        $(".page").removeClass("open");
+        $target.addClass("open");
+    });
+    $('#welcome .news[href^="#"]').click(function (en) {
+        en.preventDefault();
+        $(document).off("scroll");
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $navTarget = $target.selector;
+        
+        console.log($target.selector);
+        
+        $('#navigation ul li a').parent().removeClass('active');
+        $("#navigation ul li a[href='" + $(this).attr("href") + "']").parent().addClass("active")
+        
+        $(".page").removeClass("open");
         $target.addClass("open");
     });
     $('#navigation ul .bars').click(function () {
@@ -46,5 +63,9 @@ $(document).ready(function() {
         $(this).find(".moreellipses").toggleClass("hidden");
         $(this).find(".fa-plus").toggleClass("hidden");
         $(this).find(".fa-minus").toggleClass("hidden");
+        if (!$(this).find(".morecontent").hasClass("hidden")) {
+          $('html, body').animate({scrollTop:$(this).offset().top - 16}, 700);
+        }
     });
 });
+
