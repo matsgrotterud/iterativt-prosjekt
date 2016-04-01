@@ -620,6 +620,28 @@ strong {
       float: none;
       height: 200px;
       border-top: 2px solid #62ADCC; }
+      #upload_page .wrapper .page_body form textarea.blue {
+        background-color: #62ADCC; }
+      #upload_page .wrapper .page_body form textarea.yellow {
+        background-color: #FCD166; }
+      #upload_page .wrapper .page_body form textarea.red {
+        background-color: #F26D66; }
+      #upload_page .wrapper .page_body form textarea.green {
+        background-color: #81C298; }
+      #upload_page .wrapper .page_body form textarea.purple {
+        background-color: #7B5681; }
+      #upload_page .wrapper .page_body form textarea.blue, #upload_page .wrapper .page_body form textarea.yellow, #upload_page .wrapper .page_body form textarea.red, #upload_page .wrapper .page_body form textarea.green, #upload_page .wrapper .page_body form textarea.purple {
+        border: none;
+        border-top: 2px solid #000;
+        color: #fff; }
+        #upload_page .wrapper .page_body form textarea.blue::-webkit-input-placeholder, #upload_page .wrapper .page_body form textarea.yellow::-webkit-input-placeholder, #upload_page .wrapper .page_body form textarea.red::-webkit-input-placeholder, #upload_page .wrapper .page_body form textarea.green::-webkit-input-placeholder, #upload_page .wrapper .page_body form textarea.purple::-webkit-input-placeholder {
+          color: #fff; }
+        #upload_page .wrapper .page_body form textarea.blue:-moz-placeholder, #upload_page .wrapper .page_body form textarea.yellow:-moz-placeholder, #upload_page .wrapper .page_body form textarea.red:-moz-placeholder, #upload_page .wrapper .page_body form textarea.green:-moz-placeholder, #upload_page .wrapper .page_body form textarea.purple:-moz-placeholder {
+          color: #fff; }
+        #upload_page .wrapper .page_body form textarea.blue::-moz-placeholder, #upload_page .wrapper .page_body form textarea.yellow::-moz-placeholder, #upload_page .wrapper .page_body form textarea.red::-moz-placeholder, #upload_page .wrapper .page_body form textarea.green::-moz-placeholder, #upload_page .wrapper .page_body form textarea.purple::-moz-placeholder {
+          color: #fff; }
+        #upload_page .wrapper .page_body form textarea.blue:-ms-input-placeholder, #upload_page .wrapper .page_body form textarea.yellow:-ms-input-placeholder, #upload_page .wrapper .page_body form textarea.red:-ms-input-placeholder, #upload_page .wrapper .page_body form textarea.green:-ms-input-placeholder, #upload_page .wrapper .page_body form textarea.purple:-ms-input-placeholder {
+          color: #fff; }
     #upload_page .wrapper .page_body form select {
       border-top: 2px solid #7B5681;
       -webkit-appearance: none;
@@ -642,7 +664,7 @@ strong {
       width: auto;
       font-size: 15px;
       letter-spacing: 1px; }
-      #upload_page .wrapper .page_body form .submit[disabled=true] {
+      #upload_page .wrapper .page_body form .submit[disabled] {
         background-color: #999;
         cursor: not-allowed; }
 

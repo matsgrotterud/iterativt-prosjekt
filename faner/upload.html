@@ -69,5 +69,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/validate.js"></script>
+    <script>
+        $('select#type').change(function() {
+            var selectColor = $("select#type option:selected").val();
+            $("textarea").removeClass().addClass(selectColor);
+        });
+    </script>
   </body>
 </html>
