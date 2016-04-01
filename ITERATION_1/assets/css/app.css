@@ -1,3 +1,14 @@
+*.yellow {
+  background-color: #FCD166; }
+*.red {
+  background-color: #F26D66; }
+*.purple {
+  background-color: #7B5681; }
+*.green {
+  background-color: #81C298; }
+*.blue {
+  background-color: #62ADCC; }
+
 .nosel {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -138,7 +149,7 @@ strong {
   -ms-user-select: none;
   user-select: none;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000;
   letter-spacing: .3px;
   background: transparent;
@@ -148,7 +159,8 @@ strong {
   margin-bottom: 12px;
   width: 150px;
   -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
+  transition: all .3s ease-out;
+  margin-right: 10px; }
   .btn.large {
     width: 160px;
     padding: 10px 42px; }
@@ -192,30 +204,75 @@ strong {
 #navigation {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 100%; }
+  left: 75px;
+  right: 0; }
   #navigation .wrapper {
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ddd; }
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 16px 0px 0px; }
+    #navigation .wrapper .top-banner {
+      height: 60px;
+      line-height: 60px;
+      overflow: hidden; }
+      #navigation .wrapper .top-banner img {
+        height: 65px; }
+      #navigation .wrapper .top-banner > *, #navigation .wrapper .top-banner div > * {
+        display: inline-block;
+        margin: 0; }
     #navigation .wrapper ul {
       list-style: none;
-      padding: 0;
-      margin: 0; }
+      padding: 10px 0;
+      margin: 0;
+      border-top: 1px solid #ddd;
+      position: fixed;
+      top: -1px;
+      bottom: 0;
+      left: -93px;
+      width: 170px;
+      background-color: #252227;
+      -webkit-transition: left .5s ease-out;
+      transition: left .5s ease-out; }
+      #navigation .wrapper ul:hover {
+        left: 0; }
       #navigation .wrapper ul li {
-        display: inline-block;
-        padding: 10px 20px;
-        border-bottom: 2px solid transparent; }
-        #navigation .wrapper ul li a {
+        display: block;
+        text-align: right;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 20px 0px 0px; }
+        #navigation .wrapper ul li a, #navigation .wrapper ul li .menu-bars {
           text-decoration: none;
-          color: #000; }
-        #navigation .wrapper ul li.active {
-          border-color: #000; }
+          color: #dedede;
+          font-weight: 200;
+          letter-spacing: 1px;
+          padding: 15px 0px 15px 15px; }
+          #navigation .wrapper ul li a span, #navigation .wrapper ul li .menu-bars span {
+            background-color: #352f39;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-left: 20px;
+            font-size: 20px; }
+        #navigation .wrapper ul li .menu-bars span {
+          background-color: transparent;
+          font-size: 28px; }
+        #navigation .wrapper ul li:hover a {
+          color: #fff; }
+          #navigation .wrapper ul li:hover a span {
+            background-color: #3c3640; }
+        #navigation .wrapper ul li.active a {
+          color: #fff; }
+          #navigation .wrapper ul li.active a span {
+            background-color: #fff;
+            color: #252227; }
 
 #dash_body {
-  margin-top: 80px;
-  width: 100%;
+  margin-top: 60px;
+  width: calc(100% - 77px);
   height: 100vh;
+  margin-right: 0;
+  margin-left: auto;
   overflow: hidden; }
   #dash_body .page {
     display: none; }
@@ -231,35 +288,110 @@ strong {
       padding: 0; }
 
 #upload_page .wrapper, #browse_page .wrapper, #about_page .wrapper, #welcome_page .wrapper {
-  display: table;
-  background-color: #e6e6e6;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  padding: 5% 0% 0% 10%; }
-  #upload_page .wrapper .row, #browse_page .wrapper .row, #about_page .wrapper .row, #welcome_page .wrapper .row {
-    display: table-cell;
-    vertical-align: middle; }
-    #upload_page .wrapper .row .top-text, #browse_page .wrapper .row .top-text, #about_page .wrapper .row .top-text, #welcome_page .wrapper .row .top-text {
-      margin-top: 30%; }
-    #upload_page .wrapper .row .computer-image, #browse_page .wrapper .row .computer-image, #about_page .wrapper .row .computer-image, #welcome_page .wrapper .row .computer-image {
-      background-image: url(../img/computerimg.png);
-      height: 85vh;
-      width: 100%;
-      background-size: contain;
-      background-position: center right;
-      background-repeat: no-repeat; }
+  padding: 16px;
+  background-color: #f7f7f7; }
+  #upload_page .wrapper .page_banner, #browse_page .wrapper .page_banner, #about_page .wrapper .page_banner, #welcome_page .wrapper .page_banner {
+    padding: 40px 60px;
+    margin-bottom: 16px; }
+    #upload_page .wrapper .page_banner .top-text, #browse_page .wrapper .page_banner .top-text, #about_page .wrapper .page_banner .top-text, #welcome_page .wrapper .page_banner .top-text {
+      width: 60%; }
 
-#welcome_page .wrapper {
-  background-color: #81C298; }
+#welcome_page .wrapper .news {
+  background-color: #000;
+  margin: 3px;
+  width: calc(50% - 6px);
+  height: 220px; }
+  #welcome_page .wrapper .news .news_info {
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    padding: 10px;
+    font-weight: 100; }
+  #welcome_page .wrapper .news:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: .1;
+    background-color: #000;
+    -webkit-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out; }
+  #welcome_page .wrapper .news.one {
+    background-color: #81C298; }
+  #welcome_page .wrapper .news.two {
+    background-color: #62ADCC; }
+  #welcome_page .wrapper .news.three {
+    background-color: #FCD166; }
+  #welcome_page .wrapper .news.four {
+    background-color: #7B5681; }
+  #welcome_page .wrapper .news.big_news {
+    height: 446px;
+    background-color: #F26D66; }
+  #welcome_page .wrapper .news:hover:after {
+    opacity: .4; }
 
-#browse_page .wrapper {
-  background-color: #F26D66; }
+#browse_page .wrapper .page_banner {
+  background-color: #fff; }
+#browse_page .wrapper .page_body .nyhet {
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 16px; }
+  #browse_page .wrapper .page_body .nyhet.yellow {
+    background-color: #FCD166; }
+  #browse_page .wrapper .page_body .nyhet.red {
+    background-color: #F26D66; }
+  #browse_page .wrapper .page_body .nyhet.purple {
+    background-color: #7B5681; }
+  #browse_page .wrapper .page_body .nyhet.green {
+    background-color: #81C298; }
+  #browse_page .wrapper .page_body .nyhet.blue {
+    background-color: #62ADCC; }
+  #browse_page .wrapper .page_body .nyhet .nyhet_text {
+    margin-left: 85px;
+    color: #fff;
+    margin-right: 85px; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text h1 {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .name {
+      margin-top: 2px; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .desc {
+      margin-top: 10px;
+      font-size: 13px;
+      margin-bottom: 5px; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .morelink {
+      display: none; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text p {
+      letter-spacing: 1px;
+      margin-bottom: 0; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .morecontent span {
+      display: none; }
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .comment {
+      width: 400px;
+      background-color: #f0f0f0;
+      margin: 10px; }
+  #browse_page .wrapper .page_body .nyhet .date {
+    position: absolute;
+    right: 30px;
+    display: block;
+    top: 55px;
+    color: #fff; }
+  #browse_page .wrapper .page_body .nyhet .fa-plus {
+    font-size: 60px;
+    display: block;
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    top: 40px; }
 
-#upload_page .wrapper {
-  background-color: #FCD166; }
-
-#about_page .wrapper {
+#upload_page .wrapper .page_banner {
   background-color: #62ADCC; }
+
+#about_page .wrapper .page_banner {
+  background-color: #81C298; }
 
 /*# sourceMappingURL=app.css.map */
