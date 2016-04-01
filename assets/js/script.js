@@ -14,7 +14,7 @@ $(document).ready(function () {
         $(".page").removeClass("open");
         $target.addClass("open");
     });
-    $('#welcome .news[href^="#"]').click(function (en) {
+    $('#welcome .links[href^="#"]').click(function (en) {
         en.preventDefault();
         $(document).off("scroll");
       
@@ -45,24 +45,19 @@ $(document).ready(function() {
     var lesstext = "less";
     $('.desc').each(function() {
         var content = $(this).html();
- 
         if(content.length > showChar) {
- 
             var c = content.substr(0, showChar);
             var h = content.substr(showChar-1, content.length - showChar);
- 
             var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent hidden">' + h + '</span>';
- 
             $(this).html(html);
         }
- 
     });
- 
-    $(".nyhet").click(function(e){
+    $(".nyhet, .news").click(function(e){
         $(this).find(".morecontent").toggleClass("hidden");
         $(this).find(".moreellipses").toggleClass("hidden");
         $(this).find(".fa-plus").toggleClass("hidden");
         $(this).find(".fa-minus").toggleClass("hidden");
+        $(this).toggleClass("read");
         if (!$(this).find(".morecontent").hasClass("hidden")) {
           $('html, body').animate({scrollTop:$(this).offset().top - 16}, 700);
         }
