@@ -23,18 +23,14 @@
                     <div class="top-text">
                         <h6 class="caps">VI INTRODUSERER: <strong>Fjerdingen Sammlingspunkt</strong></h6>
                         <div class="border short"></div>
-                        <h1 class="black">OM OSS SIDE</h1>
-                        <h1 class="dark no-marg">OM OSS SIDE</h1>
+                        <h1 class="black">OM OSS</h1>
+                        <h1 class="dark no-marg">ITERATIV WEBPROSJEKT<br>GRUPPE 32<br>EKSAMENSOPPGAVE VÅREN 2016</h1>
                         <br>
-                        <p>Lorem ipsum dolor sit amet onasetuir lorem dolor amet ipsum lorem dolor dette er en dummy tekst bare som burde byttes.</p>
+                        <h6 style="font-size: 150%">En side laget av studenter ved avdeling for Teknologi på Westerdals ACT.<br><br>Mats Grøtterud<br>Huong Duy Nguyen<br>Kristoffer Berntsen</h6>
                         <br>
-                        <div class="buttons-inline">
-                            <a href="../dashboard.html" class="btn black fill">LOGIN</a>
-                        </div>
+                        <br>
+                        <br>
                     </div>
-                </div>
-                <div class="col-sm-6 col-xs-12 no-pad">
-                    <div class="computer-image"></div>
                 </div>
             </div>
         </div>

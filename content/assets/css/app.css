@@ -9,24 +9,8 @@
 *.blue {
   background-color: #62ADCC; }
 
-.nosel {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
 .clearfix {
   clear: both; }
-
-img {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
 
 html {
   width: 100%;
@@ -125,12 +109,7 @@ strong {
   display: block;
   width: 50px;
   background: #000;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  -webkit-touch-callout: none;}
   .border.short {
     width: 30px; }
   .border.long {
@@ -142,11 +121,6 @@ strong {
 
 .btn {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   font-size: 12px;
   font-weight: 400;
   color: #000;
@@ -232,8 +206,6 @@ strong {
       background-color: #252227;
       -webkit-transition: left .5s ease-out;
       transition: left .5s ease-out; }
-      #navigation .wrapper ul:click {
-        left: 0; }
       #navigation .wrapper ul li {
         display: block;
         text-align: right;

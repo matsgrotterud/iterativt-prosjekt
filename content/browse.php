@@ -30,7 +30,7 @@
                     <h1 class="black">Se hva som skjer</h1>
                     <h1 class="dark no-marg">Hold deg oppdatert og delta på ting du liker</h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet onasetuir lorem dolor amet ipsum lorem dolor dette er en dummy tekst bare som burde byttes.</p>
+                    <p style="font-size: 120%">Samarbeid, Vennskap, og Utveksling av idéer.</p>
                 </div>
             </div>
             <div class="page_body">

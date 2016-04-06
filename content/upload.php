@@ -25,7 +25,7 @@
                     <h1 class="black">Del dine prosjekter</h1>
                     <h1 class="white no-marg">Åpne for muligheter</h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet onasetuir lorem dolor amet ipsum lorem dolor dette er en dummy tekst bare som burde byttes.</p>
+                    <p style="font-size: 120%">Publiser dine tanker med mangfoldet. Utrykk deg. En del av et fellesskap.</p>
                 </div>
             </div>
             <div class="page_body">

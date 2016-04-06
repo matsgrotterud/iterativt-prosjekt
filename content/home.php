@@ -26,7 +26,7 @@
                     <h2 class="white">Velkommen til</h2>
                     <h2 class="black no-marg">Fjerdingen Sammlingspunkt</h2>
                     <br>
-                    <p class="white">Lorem ipsum dolor sit amet onasetuir lorem dolor amet ipsum lorem dolor dette er en dummy tekst bare som burde byttes.</p>
+                    <p style="font-size: 120%" class="white">Hjemmesiden for alle fra avdeling for Teknologi.<br>Nye muligheter for Samarbeid, Vennskap, og Utveksling av idéer.</p>
                 </div>
             </div>
             <div class="row first no-marg">
