@@ -1,12 +1,18 @@
 <?php
+
+    $GLOBALS['i'] = 5;
+        
+    function setAntallNyheter($number){
+        $GLOBALS['i'] = $number;
+    }
+
     function getAlleNyheter(){
         
         include 'get_nyheter.php';
-
-        $i = 10;
         
         while ($nyhet = mysqli_fetch_array($result)) {
-            if($i == "0"){
+            if($GLOBALS['i'] == "0"){
+                break;
             } else {
                 if($nyhet['nyhetType'] == ''){
                     echo'<div class="nyhet FARGE yellow">';
@@ -37,14 +43,14 @@
                     <span class="fa fa-plus"></span>
                     <span class="fa fa-minus hidden"></span>
                     <div class="nyhet_text">
-                        <span class="title"><h1>'.$nyhet['tittel'].'</h1></span>
+                        <span class="title" style="font-size: 200%">'.$nyhet['tittel'].'</span>
                         <h6 class="name"><strong>'.$nyhetType.'</strong>  Av  <strong>'.$nyhet['navn'].'</strong></h6>
                         <p class="desc more">'.$nyhet['beskrivelse'].'</p>
                         </div>
                     <span class="date">'.$nyhet['tidspunkt'].'</span>
                 </div>';
             }
-            $i -= 1;
+            $GLOBALS['i'] -= 1;
         }
         closeConnection($connection);
     }

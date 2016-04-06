@@ -2,6 +2,10 @@
 <?php
     include 'assets/php/layout.php';
     include 'assets/php/tidslinje.php';
+    
+    if(isset($_POST['antall'])){
+        setAntallNyheter($_POST['antall']); //Recieve through self, POST
+    }
 
     //-------------------------------------------------
     //For Header
@@ -29,7 +33,21 @@
                     <p>Lorem ipsum dolor sit amet onasetuir lorem dolor amet ipsum lorem dolor dette er en dummy tekst bare som burde byttes.</p>
                 </div>
             </div>
-            <div class="page_body">';
+            <div class="page_body">
+
+            <form action="browse.php" method="post">
+                <select name="antall" id="type">
+                    <option value="" disabled selected>Antall Nyheter</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+                <input type="submit" value="Oppdater" id="submit">	
+                <br>
+                <br>
+            </form>';
     
     getAlleNyheter();
     

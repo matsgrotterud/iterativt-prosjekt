@@ -232,7 +232,7 @@ strong {
       background-color: #252227;
       -webkit-transition: left .5s ease-out;
       transition: left .5s ease-out; }
-      #navigation .wrapper ul:hover {
+      #navigation .wrapper ul:click {
         left: 0; }
       #navigation .wrapper ul li {
         display: block;

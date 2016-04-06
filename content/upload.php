@@ -41,7 +41,7 @@
 
                     <input placeholder="Tittel" type="text" name="tittel" class="title" id="tittel">
                         
-                    <select type="text" name="nyhetType" id="type">
+                    <select name="nyhetType" id="type">
                         <option value="" disabled selected>Velg type</option>
                         <option value="yellow">Nyhet</option>
                         <option value="purple">Arrangement</option>
@@ -51,9 +51,10 @@
                     </select>
                         
                     <div class="clearfix"></div>
-                    <textarea placeholder="Innhold" type="text" name="beskrivelse" style="resize: none;" id="beskrivelse"></textarea>
+                    <textarea placeholder="Innhold" name="beskrivelse" style="resize: none;" id="beskrivelse"></textarea>
                     <input type="submit" value="post" class="btn submit" id="submit">	
                 </form>
+                
             </div>
         </div>
     </section>';

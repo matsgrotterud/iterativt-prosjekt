@@ -58,9 +58,6 @@ $(document).ready(function() {
         $(this).find(".fa-plus").toggleClass("hidden");
         $(this).find(".fa-minus").toggleClass("hidden");
         $(this).toggleClass("read");
-        if (!$(this).find(".morecontent").hasClass("hidden")) {
-          $('html, body').animate({scrollTop:$(this).offset().top - 16}, 700);
-        }
     });
 });
 

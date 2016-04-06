@@ -9,7 +9,7 @@
         "SELECT *
         FROM nyheter
         ORDER BY postid DESC
-        LIMIT 15";
+        LIMIT 30";
         
     $result = mysqli_query($connection, $query);
 

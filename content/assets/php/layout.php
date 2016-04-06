@@ -7,7 +7,7 @@
     function endHead(){
         echo'
             <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
             <meta name="viewport" content="width=device-width, initial-scale=1" /> 
             <meta name="Description" content="Test tsest test" />
             <meta name="keywords" content="Test test test" />
@@ -16,7 +16,7 @@
             <meta property="og:title" content="" />
             <meta property="og:type" content="Website" />
             <meta property="og:description" content="testest" />
-            <link rel="shortcut icon" href="">
+            <link rel="shortcut icon" href="favicon.png">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/css/montserrat.css" />
@@ -33,26 +33,51 @@
     function startBody(){
         echo'
         <body>
-            <section class="navigation" id="navigation">
+            <div class="navigation" id="navigation">
             <div class="wrapper">
                 <div class="top-banner">
-                    <img src="assets/img/westerdals%20-logo-small.png">
+                    <img src="assets/img/westerdals%20-logo-small.png" alt="small logo">
                 </div>
                 <ul>
-                    <li class="bars"><span class="menu-bars"><span class="fa fa-bars"></span><span class="fa fa-times hidden"></span></span></li>
-                    <li class="active"><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
-                    <li><a href="browse.php">Tidslinje<span class="fa fa-rss"></span></a></li>
-                    <li><a href="upload.php">Last Opp<span class="fa fa-cloud-upload"></span></a></li>
-                    <li><a href="about.php">Om Oss<span class="fa fa-info"></span></a></li>
+                    <li class="bars"><span class="menu-bars"><span class="fa fa-bars"></span><span class="fa fa-times hidden"></span></span></li>';
+                    if (strpos($_SERVER['REQUEST_URI'], "home") !== false){
+                        echo'
+                        <li class="active"><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
+                        <li><a href="browse.php">Tidslinje<span class="fa fa-rss"></span></a></li>
+                        <li><a href="upload.php">Last Opp<span class="fa fa-cloud-upload"></span></a></li>
+                        <li><a href="about.php">Om Oss<span class="fa fa-info"></span></a></li>';
+                    }
+                    if (strpos($_SERVER['REQUEST_URI'], "browse") !== false){
+                        echo'
+                        <li><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
+                        <li class="active"><a href="browse.php">Tidslinje<span class="fa fa-rss"></span></a></li>
+                        <li><a href="upload.php">Last Opp<span class="fa fa-cloud-upload"></span></a></li>
+                        <li><a href="about.php">Om Oss<span class="fa fa-info"></span></a></li>';
+                    }
+                    if (strpos($_SERVER['REQUEST_URI'], "upload") !== false){
+                        echo'
+                        <li><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
+                        <li><a href="browse.php">Tidslinje<span class="fa fa-rss"></span></a></li>
+                        <li class="active"><a href="upload.php">Last Opp<span class="fa fa-cloud-upload"></span></a></li>
+                        <li><a href="about.php">Om Oss<span class="fa fa-info"></span></a></li>';
+                    }
+                    if (strpos($_SERVER['REQUEST_URI'], "about") !== false){
+                        echo'
+                        <li><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
+                        <li><a href="browse.php">Tidslinje<span class="fa fa-rss"></span></a></li>
+                        <li><a href="upload.php">Last Opp<span class="fa fa-cloud-upload"></span></a></li>
+                        <li class="active"><a href="about.php">Om Oss<span class="fa fa-info"></span></a></li>';
+                    }
+                    echo'
                 </ul>
             </div>
-            </section>
-            <section class="dash_body" id="dash_body">';
+            </div>
+            <div class="dash_body" id="dash_body">';
     }
     
     function endBody(){
         echo'
-            </section>
+            </div>
         </body>';
     }
     
