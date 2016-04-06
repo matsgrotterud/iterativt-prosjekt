@@ -21,12 +21,12 @@
         <div class="wrapper">
             <div class="page_banner">
                 <div class="top-text">
-                    <h6 class="caps white">VELKOMMEN: <strong>Fjerdingen Sammlingspunkt</strong></h6>
+                    <h6 class="caps white">VELKOMMEN: <strong>Fjerdingen Samlingspunkt</strong></h6>
                     <div class="border short white"></div>
                     <h2 class="white">Velkommen til</h2>
-                    <h2 class="black no-marg">Fjerdingen Sammlingspunkt</h2>
+                    <h2 class="black no-marg">Fjerdingen Samlingspunkt</h2>
                     <br>
-                    <p style="font-size: 120%" class="white">Hjemmesiden for alle fra avdeling for Teknologi.<br>Nye muligheter for Samarbeid, Vennskap, og Utveksling av idéer.</p>
+                    <p style="font-size: 120%" class="white">Hjemmesiden for alle på Fjerdingen.<br>Nye muligheter for Samarbeid, Vennskap, og Utveksling av idéer.</p>
                 </div>
             </div>
             <div class="row first no-marg">

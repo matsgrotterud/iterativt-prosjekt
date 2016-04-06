@@ -20,7 +20,7 @@
         <div class="wrapper">
             <div class="page_banner">
                 <div class="top-text">
-                    <h6 class="caps">OPPLASTNINGSSIDE: <strong>Fjerdingen Sammlingspunkt</strong></h6>
+                    <h6 class="caps">OPPLASTNINGSSIDE: <strong>Fjerdingen Samlingspunkt</strong></h6>
                     <div class="border short"></div>
                     <h1 class="black">Del dine prosjekter</h1>
                     <h1 class="white no-marg">Åpne for muligheter</h1>

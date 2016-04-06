@@ -25,7 +25,7 @@
         <div class="wrapper">
             <div class="page_banner">
                 <div class="top-text">
-                    <h6 class="caps">VISNINGSSIDE: <strong>Fjerdingen Sammlingspunkt</strong></h6>
+                    <h6 class="caps">VISNINGSSIDE: <strong>Fjerdingen Samlingspunkt</strong></h6>
                     <div class="border short"></div>
                     <h1 class="black">Se hva som skjer</h1>
                     <h1 class="dark no-marg">Hold deg oppdatert og delta på ting du liker</h1>
