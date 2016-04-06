@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>';
-    
+    getCommonScripts();
     endBody();
     //End For Body
     //-------------------------------------------------

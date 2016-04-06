@@ -30,19 +30,19 @@
                 </div>
             </div>
             <div class="row first no-marg">
-                <a href="#browse" class="col-xs-3 no-pad links one">
+                <a href="browse.php" class="col-xs-3 no-pad links one">
                     <div class="link_info">
                         <h1>Tidslinje</h1>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </a>
-                <a href="#upload" class="col-xs-3 no-pad links two">
+                <a href="upload.php" class="col-xs-3 no-pad links two">
                     <div class="link_info">
                         <h1>Last Opp</h1>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </a>
-                <a href="#about" class="col-xs-3 no-pad links three">
+                <a href="about.php" class="col-xs-3 no-pad links three">
                     <div class="link_info">
                         <h1>Om Oss</h1>
                         <p>Lorem ipsum dolor sit amet</p>
@@ -62,7 +62,7 @@
                     <span class="fa fa-minus hidden"></span>
                     <div class="news_info">
                         <h1 class="white">'.$GLOBALS['1tittel'].'</h1>
-                        <h6 class="name"><strong>TYPE NYHET </strong>Av <strong>'.$GLOBALS['1navn'].'</strong></h6>
+                        <h6 class="name"><strong>'.$GLOBALS['1nyhetType'].'</strong> Av <strong>'.$GLOBALS['1navn'].'</strong></h6>
                         <p class="white desc more">'.$GLOBALS['1beskrivelse'].'</p>
                     </div>
                     <span class="date">'.$GLOBALS['1tidspunkt'].'</span>
@@ -75,7 +75,7 @@
                             <span class="fa fa-minus hidden"></span>
                             <div class="news_info">
                                 <h4>'.$GLOBALS['2tittel'].'</h4>
-                                <h6 class="name"><strong>TYPE NYHET </strong>Av <strong>'.$GLOBALS['2navn'].'</h6>
+                                <h6 class="name"><strong>'.$GLOBALS['2nyhetType'].'</strong> Av <strong>'.$GLOBALS['2navn'].'</h6>
                                 <p class="desc more">'.$GLOBALS['2beskrivelse'].'</p>
                             </div>
                             <span class="date">'.$GLOBALS['2tidspunkt'].'</span>
@@ -86,7 +86,7 @@
                             <span class="fa fa-minus hidden"></span>
                             <div class="news_info">
                                 <h4>'.$GLOBALS['3tittel'].'</h4>
-                                <h6 class="name"><strong>TYPE NYHET </strong>Av <strong>'.$GLOBALS['3navn'].'</strong></h6>
+                                <h6 class="name"><strong>'.$GLOBALS['3nyhetType'].'</strong> Av <strong>'.$GLOBALS['3navn'].'</strong></h6>
                                 <p class="desc more">'.$GLOBALS['3beskrivelse'].'</p>
                             </div>
                             <span class="date">'.$GLOBALS['3tidspunkt'].'</span>
@@ -97,7 +97,7 @@
                             <span class="fa fa-minus hidden"></span>
                             <div class="news_info">
                                 <h4>'.$GLOBALS['4tittel'].'</h4>
-                                <h6 class="name"><strong>TYPE NYHET </strong>Av <strong>'.$GLOBALS['4navn'].'</strong></h6>
+                                <h6 class="name"><strong>'.$GLOBALS['4nyhetType'].'</strong> Av <strong>'.$GLOBALS['4navn'].'</strong></h6>
                                 <p class="desc more">'.$GLOBALS['4beskrivelse'].'</p>
                             </div>
                             <span class="date">'.$GLOBALS['4tidspunkt'].'</span>
@@ -108,7 +108,7 @@
                             <span class="fa fa-minus hidden"></span>
                             <div class="news_info">
                                 <h4>'.$GLOBALS['5tittel'].'</h4>
-                                <h6 class="name"><strong>TYPE NYHET </strong>Av <strong>'.$GLOBALS['5navn'].'</strong></h6>
+                                <h6 class="name"><strong>'.$GLOBALS['5nyhetType'].'</strong> Av <strong>'.$GLOBALS['5navn'].'</strong></h6>
                                 <p class="desc more">'.$GLOBALS['5beskrivelse'].'</p>
                             </div>
                             <span class="date">'.$GLOBALS['5tidspunkt'].'</span>
@@ -118,16 +118,8 @@
                 </div>
             </div>
         </div>
-    </section>
-        <div class="browse page" id="browse">
-            <iframe src="faner/browse.html"></iframe>
-        </div>
-        <div class="upload page" id="upload">
-            <iframe src="faner/upload.html"></iframe>
-        </div>
-        <div class="about page" id="about">
-            <iframe src="faner/about.html"></iframe>
-        </div>';
+    </section>';
+    getCommonScripts();
     endBody();
     //End For Body
     //-------------------------------------------------

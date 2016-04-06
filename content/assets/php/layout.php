@@ -51,16 +51,26 @@
     }
     
     function endBody(){
-        getScripts();
         echo'
             </section>
         </body>';
     }
     
-    function getScripts(){
+    function getCommonScripts(){
         echo'
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="assets/js/script.js"></script>';
+    }
+
+    function getUploadScripts(){
+        echo'
+        <script src="assets/js/validate.js"></script>
+        <script>
+            $("select#type").change(function() {;
+                var selectColor = $("select#type option:selected").val();
+                $("textarea").removeClass().addClass(selectColor);
+            });
+        </script>';
     }
 ?>

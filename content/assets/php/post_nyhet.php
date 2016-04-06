@@ -6,22 +6,24 @@
 
 
     $navn = $_POST['navn']; //Recieve through post
-    $nyhetType = $_POST['nyhetType']; //Recieve through post
-	$beskrivelse = $_POST['beskrivelse']; //Recieve through post
-    $passord = $_POST['innhold']; //Recieve through post
+    $tittel = $_POST['tittel']; //Recieve through post
+    $beskrivelse = $_POST['beskrivelse']; //Recieve through post
+	$nyhetType = $_POST['nyhetType']; //Recieve through post
 	
 		
 	// Create new user
     if($_SERVER["REQUEST_METHOD"] == "POST"){ //Only accept POST
 	   $query = "
        
-       INSERT INTO nyheter (`navn`, `nyhetType`, `beskrivelse`, `innhold`) 
-       VALUES ('$navn', '$nyhetType', '$beskrivelse', '$passord')";
+       INSERT INTO nyheter (`navn`, `tittel`, `beskrivelse`, `innhold`, `nyhetType`) 
+       VALUES ('$navn', '$tittel', '$beskrivelse', 'POST', '$nyhetType')";
         
 	   mysqli_query($connection, $query);
         closeConnection($connection);
     } else {
-        //Redirect user
+        header("Location: ../../browse.php");
+        exit();
     }
-        
+    header("Location: ../../browse.php");
+    exit(); 
 ?>

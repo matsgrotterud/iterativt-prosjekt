@@ -11,6 +11,9 @@
             $GLOBALS['1navn'] = $nyhet['navn'];
             $GLOBALS['1beskrivelse'] = $nyhet['beskrivelse'];
             $GLOBALS['1tidspunkt'] = $nyhet['tidspunkt'];
+            sjekkNyhetType($nyhet['nyhetType']);
+            $GLOBALS['1nyhetType'] = $GLOBALS['nyhetType'];
+            
         }
         
         if($i == "1"){
@@ -18,6 +21,8 @@
             $GLOBALS['2navn'] = $nyhet['navn'];
             $GLOBALS['2beskrivelse'] = $nyhet['beskrivelse'];
             $GLOBALS['2tidspunkt'] = $nyhet['tidspunkt'];
+            sjekkNyhetType($nyhet['nyhetType']);
+            $GLOBALS['2nyhetType'] = $nyhetType;
         }
         
         if($i == "2"){
@@ -25,6 +30,8 @@
             $GLOBALS['3navn'] = $nyhet['navn'];
             $GLOBALS['3beskrivelse'] = $nyhet['beskrivelse'];
             $GLOBALS['3tidspunkt'] = $nyhet['tidspunkt'];
+            sjekkNyhetType($nyhet['nyhetType']);
+            $GLOBALS['3nyhetType'] = $nyhetType;
         }
         
         if($i == "3"){
@@ -32,6 +39,8 @@
             $GLOBALS['4navn'] = $nyhet['navn'];
             $GLOBALS['4beskrivelse'] = $nyhet['beskrivelse'];
             $GLOBALS['4tidspunkt'] = $nyhet['tidspunkt'];
+            sjekkNyhetType($nyhet['nyhetType']);
+            $GLOBALS['4nyhetType'] = $nyhetType;
         }
         
         if($i == "4"){
@@ -39,94 +48,29 @@
             $GLOBALS['5navn'] = $nyhet['navn'];
             $GLOBALS['5beskrivelse'] = $nyhet['beskrivelse'];
             $GLOBALS['5tidspunkt'] = $nyhet['tidspunkt'];
+            sjekkNyhetType($nyhet['nyhetType']);
+            $GLOBALS['5nyhetType'] = $nyhetType;
         }
         
         $i += 1;
 	}
-
-    //Nyhet 1
-    function getNyhet1Tittel(){
-        echo $GLOBALS['1tittel'];
-    }
-
-    function getNyhet1Navn(){
-        echo $GLOBALS['1navn'];
-    }
-
-    function getNyhet1Beskrivelse(){
-        echo $GLOBALS['1beskrivelse'];
-    }
     
-    function getNyhet1Tidspunkt(){
-        echo $GLOBALS['1tidspunkt'];
-    }
-
-    //Nyhet 2
-    function getNyhet2Tittel(){
-        echo $GLOBALS['2tittel'];
-    }
-
-    function getNyhet2Navn(){
-        echo $GLOBALS['2navn'];
-    }
-
-    function getNyhet2Beskrivelse(){
-        echo $GLOBALS['2beskrivelse'];
-    }
-    
-    function getNyhet2Tidspunkt(){
-        echo $GLOBALS['2tidspunkt'];
-    }
-
-    //Nyhet 3
-    function getNyhet3Tittel(){
-        echo $GLOBALS['3tittel'];
-    }
-
-    function getNyhet3Navn(){
-        echo $GLOBALS['3navn'];
-    }
-
-    function getNyhet3Beskrivelse(){
-        echo $GLOBALS['3beskrivelse'];
-    }
-    
-    function getNyhet3Tidspunkt(){
-        echo $GLOBALS['3tidspunkt'];
-    }
-
-    //Nyhet 4
-    function getNyhet4Tittel(){
-        echo $GLOBALS['4tittel'];
-    }
-
-    function getNyhet4Navn(){
-        echo $GLOBALS['4navn'];
-    }
-
-    function getNyhet4Beskrivelse(){
-        echo $GLOBALS['4beskrivelse'];
-    }
-    
-    function getNyhet4Tidspunkt(){
-        echo $GLOBALS['4tidspunkt'];
-    }
- 
-    //Nyhet 5
-    function getNyhet5Tittel(){
-        echo $GLOBALS['5tittel'];
-    }
-
-    function getNyhet5Navn(){
-        echo $GLOBALS['5navn'];
-    }
-
-    function getNyhet5Beskrivelse(){
-        echo $GLOBALS['5beskrivelse'];
-    }
-    
-    function getNyhet5Tidspunkt(){
-        echo $GLOBALS['5tidspunkt'];
+    function sjekkNyhetType($nyhetType){
+        if($nyhetType == '1'){
+            $GLOBALS['nyhetType'] = 'Nyhet';
+        }
+        if($nyhetType == '2'){
+            $GLOBALS['nyhetType'] = 'Arrangement';
+        }
+        if($nyhetType == '3'){
+            $GLOBALS['nyhetType'] = 'Gladmelding';
+        }
+        if($nyhetType == '4'){
+            $GLOBALS['nyhetType'] = 'Viktig Melding';
+        }
+        if($nyhetType == '5'){
+            $GLOBALS['nyhetType'] = 'Humor';
+        }
     }
 
     closeConnection($connection);
