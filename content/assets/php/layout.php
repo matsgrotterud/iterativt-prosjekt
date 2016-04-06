@@ -66,8 +66,10 @@
     function getUploadScripts(){
         echo'
         <script src="assets/js/validate.js"></script>
-        <script>
-            $("select#type").change(function() {;
+        <script>';
+            echo"
+            $('select#type').change(function() {;";
+                echo'
                 var selectColor = $("select#type option:selected").val();
                 $("textarea").removeClass().addClass(selectColor);
             });

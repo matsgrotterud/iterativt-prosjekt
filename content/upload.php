@@ -34,7 +34,7 @@
                     <h1>Posten din er postet!</h1>
                 </div>
                 
-                <form action="assets/php/post_nyhet.php" method="post" id="formSubmit">
+                <form action="assets/php/post_nyhet.php" method="post">
                     <h1 class="black text-center">Skriv posten din her</h1>
                     <div class="border center"></div>
                     <input placeholder="Ditt Navn" type="text" name="navn" class="name" id="navn">
@@ -43,20 +43,21 @@
                         
                     <select type="text" name="nyhetType" id="type">
                         <option value="" disabled selected>Velg type</option>
-                        <option value="1">Nyhet</option>
-                        <option value="2">Arrangement</option>
-                        <option value="3">Gladmelding</option>
-                        <option value="4">Viktig melding</option>
-                        <option value="5">Humor</option>
+                        <option value="yellow">Nyhet</option>
+                        <option value="purple">Arrangement</option>
+                        <option value="green">Gladmelding</option>
+                        <option value="red">Viktig melding</option>
+                        <option value="blue">Humor</option>
                     </select>
                         
                     <div class="clearfix"></div>
                     <textarea placeholder="Innhold" type="text" name="beskrivelse" style="resize: none;" id="beskrivelse"></textarea>
-                    <input type="submit" value="POST" class="btn submit" id="submit">	
+                    <input type="submit" value="post" class="btn submit" id="submit">	
                 </form>
             </div>
         </div>
     </section>';
+    getCommonScripts();
     getUploadScripts();
     endBody();
     //End For Body

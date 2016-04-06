@@ -21,6 +21,6 @@ $("form").on("submit", function(event) {
     if(validate()) {
         $("form").hide();
         $(".message").show();
-        $.post('http://mymiinto.com:8888/mail', $("form").serializeArray())
+        $.post('http://home.nith.no/~nguhuo15/v2/content/assets/php/post_nyhet.php', $("form").serializeArray())
     }
 });
