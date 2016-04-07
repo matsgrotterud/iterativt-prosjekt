@@ -11,10 +11,10 @@
         $GLOBALS['selected1'] = $_POST['antall']; //Lagre valg
         setAntallNyheter($_POST['antall']);
     }
-    if(isset($_POST['type'])){
-        if($_POST['type'] > 0){
-            $GLOBALS['selected2'] = $_POST['type']; //Lagre valg
-            setTypeLimit($_POST['type']);
+    if(isset($_POST['valgtnyhet'])){
+        if($_POST['valgtnyhet'] > 0){
+            $GLOBALS['selected2'] = $_POST['valgtnyhet']; //Lagre valg
+            setTypeLimit($_POST['valgtnyhet']);
         }
     }
 
@@ -64,7 +64,7 @@
                 <!-- Antall nyheter -->
                 
                 <!-- Sortering, nyhetType -->
-                <select name="type" id="type">
+                <select name="valgtnyhet">
                     <option'.(($GLOBALS['selected2'] == 0 ? ' selected':'')).' value="0" disabled>Nyhet type</option>
                     <option value="0">Alle</option>
                     <option'.(($GLOBALS['selected2'] == 1 ? ' selected':'')).' value="1">Nyhet</option>

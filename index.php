@@ -13,7 +13,7 @@
 
     echo'
     <body>
-        <section class="front_page" id="front_page">
+        <div class="front_page" id="front_page">
             <div class="wrapper">
                 <div class="row no-marg">
                     <div class="col-sm-6 col-xs-12 no-pad">
