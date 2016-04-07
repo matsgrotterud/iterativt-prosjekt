@@ -538,7 +538,7 @@ transition: width .5s ease-out;}
     #browse_page .wrapper .page_body .nyhet .nyhet_text p {
       letter-spacing: 1px;
       margin-bottom: 0; }
-    #browse_page .wrapper .page_body .nyhet .nyhet_text .morecontent {
+    #browse_page .wrapper .page_body .nyhet .nyhet_text .desc {
       white-space: pre-wrap; }
     #browse_page .wrapper .page_body .nyhet .nyhet_text .comment {
       width: 400px;
@@ -661,5 +661,24 @@ transition: width .5s ease-out;}
                }
 #about_page .wrapper .page_banner {
   background-color: #fff; }
+.sortForm {
+    text-align: right;
+}
+.sortForm .oppdater {
+    background-color: #81C298;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: -4px;
+}
+.sortForm .sortType {
+    margin-left: 10px;
+}
 
 /*# sourceMappingURL=app.css.map */
