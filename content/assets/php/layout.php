@@ -49,6 +49,7 @@
             <div class="wrapper">
                 <div class="top-banner">
                     <img src="assets/img/westerdals%20-logo-small.png" alt="small logo">
+                    <h6 class="logo-text">Fjerdingen Samlingspunkt</h6>
                 </div>
                 <ul>
                     <li class="bars"><span class="menu-bars"><span class="fa fa-bars hidden"></span><span class="fa fa-times"></span></span></li>';

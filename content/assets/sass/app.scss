@@ -38,7 +38,8 @@
             line-height: 60px;
             overflow: hidden;
             img {
-                height: 65px;   
+                height: 65px;
+                float: right;
             }
             > *, div > * {
                 display: inline-block;

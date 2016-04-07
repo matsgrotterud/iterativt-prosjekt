@@ -189,7 +189,12 @@ strong {
       line-height: 60px;
       overflow: hidden; }
       #navigation .wrapper .top-banner img {
-        height: 65px; }
+        height: 65px;
+        float: right;}
+    #navigation .wrapper .top-banner h6 {
+    float: right;
+    font-weight: 500;
+    line-height: 60px; }
       #navigation .wrapper .top-banner > *, #navigation .wrapper .top-banner div > * {
         display: inline-block;
         margin: 0; }
@@ -212,6 +217,7 @@ strong {
         display: block;
         text-align: right;
         height: 60px;
+        padding-top: 6px;
         line-height: 60px;
         margin: 0 20px 0px 0px; }
         #navigation .wrapper ul li a, #navigation .wrapper ul li .menu-bars {
@@ -240,23 +246,19 @@ strong {
           #navigation .wrapper ul li.active a span {
             background-color: #fff;
             color: #252227; }
-      @media (max-width: 768px) {
-        #navigation .wrapper ul {
-          height: 62px;
-          bottom: auto;
-          padding-top: 6px; }
-          #navigation .wrapper ul:hover {
-            left: -93px; }
-          #navigation .wrapper ul li {
-            display: none; }
-            #navigation .wrapper ul li.bars {
-              display: block; } }
       #navigation .wrapper ul.push {
         left: -93px;
-        height: auto;
-        bottom: 0; }
+      }
+    @media (max-width: 768px) {
+          #navigation .wrapper ul.push {
+              height: 62px;
+              bottom: auto; 
+            }
         #navigation .wrapper ul.push li {
+          display: none; }
+        #navigation .wrapper ul.push li.bars {
           display: block; }
+        }
 
 #dash_body {
   margin-top: 60px;
@@ -267,7 +269,12 @@ strong {
 -webkit-transition: width .5s ease-out;
 transition: width .5s ease-out;}
 #dash_body.push {
-    width: calc(100% - 170px);
+    @media (max-width: 768px) {
+        width: 100%;   
+    }
+    @media (min-width: 769px) {
+        width: calc(100% - 170px);
+    }
 }
   @media (max-width: 768px) {
     #dash_body {
