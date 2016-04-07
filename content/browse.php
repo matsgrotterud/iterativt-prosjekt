@@ -50,7 +50,7 @@
 
             <!-- Sortering -->
             
-            <form action="browse.php" method="post">
+            <form action="browse.php" method="post" class="sortForm">
             
                 <!-- Antall nyheter -->
                 <select name="antall" id="type">
@@ -64,7 +64,7 @@
                 <!-- Antall nyheter -->
                 
                 <!-- Sortering, nyhetType -->
-                <select name="type" id="type">
+                <select name="type" id="type" class="sortType">
                     <option'.(($GLOBALS['selected2'] == 0 ? ' selected':'')).' value="0" disabled>Nyhet type</option>
                     <option value="0">Alle</option>
                     <option'.(($GLOBALS['selected2'] == 1 ? ' selected':'')).' value="1">Nyhet</option>
@@ -75,7 +75,7 @@
                 </select>
                 <!-- Sortering, nyhetType -->
                 
-                <input type="submit" value="Oppdater" id="submit">	
+                <input type="submit" class="oppdater" value="Oppdater" id="submit">	
                 <br>
                 <br>
             </form>
