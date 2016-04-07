@@ -252,7 +252,7 @@ strong {
             #navigation .wrapper ul li.bars {
               display: block; } }
       #navigation .wrapper ul.push {
-        left: 0;
+        left: -93px;
         height: auto;
         bottom: 0; }
         #navigation .wrapper ul.push li {
@@ -263,7 +263,9 @@ strong {
   width: calc(100% - 77px);
   height: calc(100vh - 60px);
   margin-right: 0;
-  margin-left: auto;}
+  margin-left: auto;
+-webkit-transition: width .5s ease-out;
+transition: width .5s ease-out;}
 #dash_body.push {
     width: calc(100% - 170px);
 }
