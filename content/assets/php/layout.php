@@ -45,13 +45,13 @@
     function startBody(){
         echo'
         <body>
-            <div class="navigation" id="navigation">
+            <div class="navigation push" id="navigation">
             <div class="wrapper">
                 <div class="top-banner">
                     <img src="assets/img/westerdals%20-logo-small.png" alt="small logo">
                 </div>
                 <ul>
-                    <li class="bars"><span class="menu-bars"><span class="fa fa-bars"></span><span class="fa fa-times hidden"></span></span></li>';
+                    <li class="bars"><span class="menu-bars"><span class="fa fa-bars hidden"></span><span class="fa fa-times"></span></span></li>';
                     if (strpos($_SERVER['REQUEST_URI'], "home") !== false){
                         echo'
                         <li class="active"><a href="home.php">Forside<span class="fa fa-home"></span></a></li>
@@ -84,7 +84,7 @@
                 </ul>
             </div>
             </div>
-            <div class="dash_body" id="dash_body">';
+            <div class="dash_body push" id="dash_body">';
     }
     
     function endBody(){

@@ -201,7 +201,7 @@ strong {
       position: fixed;
       top: -1px;
       bottom: 0;
-      left: -93px;
+      left: 0px;
       width: 170px;
       background-color: #252227;
       -webkit-transition: left .5s ease-out;
@@ -264,6 +264,9 @@ strong {
   height: calc(100vh - 60px);
   margin-right: 0;
   margin-left: auto;}
+#dash_body.push {
+    width: calc(100% - 170px);
+}
   @media (max-width: 768px) {
     #dash_body {
       width: 100%; } }
@@ -647,6 +650,6 @@ strong {
       #upload_page .wrapper .page_body .message p {
                }
 #about_page .wrapper .page_banner {
-  background-color: #81C298; }
+  background-color: #fff; }
 
 /*# sourceMappingURL=app.css.map */

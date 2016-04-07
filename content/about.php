@@ -19,8 +19,8 @@
     <section class="about_page" id="about_page">
         <div class="wrapper">
             <div class="row no-marg">
-                <div class="col-sm-6 col-xs-12 no-pad">
-                    <div class="page_banner white">
+                <div class="page_banner white">
+                    <div class="col-sm-6 col-xs-12 no-pad">
                         <div class="top-text">
                             <h6 class="caps">OM OSS: <strong>Fjerdingen Samlingspunkt</strong></h6>
                             <div class="border short"></div>

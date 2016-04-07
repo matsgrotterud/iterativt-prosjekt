@@ -33,6 +33,7 @@ $(document).ready(function () {
     });
     $('#navigation ul .bars').click(function () {
         $(this).parent().toggleClass("push");
+        $(".dash_body").toggleClass("push");
         $(this).find(".fa-bars").toggleClass("hidden");
         $(this).find(".fa-times").toggleClass("hidden");
     });
