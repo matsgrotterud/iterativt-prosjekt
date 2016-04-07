@@ -7,7 +7,7 @@
     startHead();
     echo'
     <title> Om Oss - Iterativ Webprosjekt</title>';
-    endhead();
+    endhead('true');
     //End For Header
     //-------------------------------------------------
 
