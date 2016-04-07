@@ -4,7 +4,7 @@
         <head>';
     }
 
-    function endHead(){
+    function endHead($fromDashboard){
         echo'
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
@@ -18,11 +18,23 @@
             <meta property="og:description" content="testest" />
             <link rel="icon" type="image/png" href="wIcon.png">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/css/montserrat.css" />
-            <link rel="stylesheet" type="text/css" href="assets/fonts/arcon/css/arcon.css" />
-            <link rel="stylesheet" type="text/css" href="assets/css/app.css">
-            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">';
+            
+            if($fromDashboard == 'true'){
+                echo'
+                <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/css/montserrat.css" />
+                <link rel="stylesheet" type="text/css" href="assets/fonts/arcon/css/arcon.css" />
+                <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+                <link rel="stylesheet" type="text/css" href="assets/css/style.css">';
+            } else {
+                echo'
+                <link rel="stylesheet" type="text/css" href="content/assets/fonts/montserrat/css/montserrat.css" />
+                <link rel="stylesheet" type="text/css" href="content/assets/fonts/arcon/css/arcon.css" />
+                <link rel="stylesheet" type="text/css" href="content/assets/css/app.css">
+                <link rel="stylesheet" type="text/css" href="content/assets/css/style.css">';
+            }
+        
+            echo'
             <!--<script src="js/modernizr.js"></script>
             [if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -7,7 +7,7 @@
     startHead();
     echo'
     <title> Last opp - Iterativ Webprosjekt</title>';
-    endhead();
+    endhead('true');
     //End For Header
     //-------------------------------------------------
 

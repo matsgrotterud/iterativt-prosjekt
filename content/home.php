@@ -8,7 +8,7 @@
     startHead();
     echo'
     <title> Dashboard - Iterativ Webprosjekt</title>';
-    endhead();
+    endhead('true');
     //End For Header
     //-------------------------------------------------
 

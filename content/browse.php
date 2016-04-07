@@ -3,16 +3,28 @@
     include 'assets/php/layout.php';
     include 'assets/php/tidslinje.php';
     
+    $GLOBALS['selected1'] = 0;
+    $GLOBALS['selected2'] = 0;
+    
+    // SORTERING & LAGRING AV VALG
     if(isset($_POST['antall'])){
-        setAntallNyheter($_POST['antall']); //Recieve through self, POST
+        $GLOBALS['selected1'] = $_POST['antall']; //Lagre valg
+        setAntallNyheter($_POST['antall']);
     }
+    if(isset($_POST['type'])){
+        if($_POST['type'] > 0){
+            $GLOBALS['selected2'] = $_POST['type']; //Lagre valg
+            setTypeLimit($_POST['type']);
+        }
+    }
+
 
     //-------------------------------------------------
     //For Header
     startHead();
     echo'
     <title> Tidslinje - Iterativ Webprosjekt</title>';
-    endhead();
+    endhead('true');
     //End For Header
     //-------------------------------------------------
 
@@ -35,19 +47,40 @@
             </div>
             <div class="page_body">
 
+
+            <!-- Sortering -->
+            
             <form action="browse.php" method="post">
+            
+                <!-- Antall nyheter -->
                 <select name="antall" id="type">
-                    <option value="" disabled selected>Antall Nyheter</option>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="15">15</option>
-                    <option value="20">20</option>
-                    <option value="25">25</option>
+                    <option'.(($GLOBALS['selected1'] == 0 ? ' selected':'')).' value="" disabled>Antall Nyheter</option>
+                    <option'.(($GLOBALS['selected1'] == 5 ? ' selected':'')).' value="5">5</option>
+                    <option'.(($GLOBALS['selected1'] == 10 ? ' selected':'')).' value="10">10</option>
+                    <option'.(($GLOBALS['selected1'] == 15 ? ' selected':'')).' value="15">15</option>
+                    <option'.(($GLOBALS['selected1'] == 20 ? ' selected':'')).' value="20">20</option>
+                    <option'.(($GLOBALS['selected1'] == 25 ? ' selected':'')).' value="25">25</option>
                 </select>
+                <!-- Antall nyheter -->
+                
+                <!-- Sortering, nyhetType -->
+                <select name="type" id="type">
+                    <option'.(($GLOBALS['selected2'] == 0 ? ' selected':'')).' value="0" disabled>Nyhet type</option>
+                    <option value="0">Alle</option>
+                    <option'.(($GLOBALS['selected2'] == 1 ? ' selected':'')).' value="1">Nyhet</option>
+                    <option'.(($GLOBALS['selected2'] == 2 ? ' selected':'')).' value="2">Arrangement</option>
+                    <option'.(($GLOBALS['selected2'] == 3 ? ' selected':'')).' value="3">Gladmelding</option>
+                    <option'.(($GLOBALS['selected2'] == 4 ? ' selected':'')).' value="4">Viktig Melding</option>
+                    <option'.(($GLOBALS['selected2'] == 5 ? ' selected':'')).' value="5">Humor</option>
+                </select>
+                <!-- Sortering, nyhetType -->
+                
                 <input type="submit" value="Oppdater" id="submit">	
                 <br>
                 <br>
-            </form>';
+            </form>
+            
+            <!-- Sortering -->';
     
     getAlleNyheter();
     
