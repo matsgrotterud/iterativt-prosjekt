@@ -269,13 +269,14 @@ strong {
 -webkit-transition: width .5s ease-out;
 transition: width .5s ease-out;}
 #dash_body.push {
-    @media (max-width: 768px) {
+    width: calc(100% - 170px);
+}
+@media (max-width: 768px) {
+    #dash_body.push {
         width: 100%;   
     }
-    @media (min-width: 769px) {
-        width: calc(100% - 170px);
-    }
 }
+
   @media (max-width: 768px) {
     #dash_body {
       width: 100%; } }
